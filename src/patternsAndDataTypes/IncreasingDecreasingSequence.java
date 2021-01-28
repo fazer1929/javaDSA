@@ -9,18 +9,18 @@ public class IncreasingDecreasingSequence {
         int N = scan.nextInt();
         int prevNum = Integer.MIN_VALUE, currNum;
         int num=1;
-        boolean incr=true,decr=true,isIncreasing = true;
+        boolean incr=true,decr=true,isDecreasing = true;
 
         while(num<=N){
             currNum = scan.nextInt();
 
-            if(isIncreasing){
+            if(isDecreasing){
                 if(currNum<prevNum)
-                    isIncreasing = false;
+                    isDecreasing = false;
             }
             else{
                 if(currNum>prevNum)
-                    decr=false;
+                    incr=false;
             }
 
             num++;
